@@ -12,9 +12,7 @@ brew install php70
 </pre>
 
 
-<pre>
     <html>
         <body>
         </body>
     </html>
-</pre>
