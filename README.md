@@ -11,8 +11,11 @@ brew tap homebrew/homebrew-php
 brew install php70
 </pre>
 
+<p>
+</p>
 
-    <html>
-        <body>
-        </body>
-    </html>
+<html>
+  <body>
+    <?php print ("I am the Cheddar MAN!!!!!"); ?>
+  </body>
+</html>
