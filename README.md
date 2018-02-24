@@ -13,9 +13,8 @@ brew install php70
 
 
 <pre>
-
-
-    <?php print ("I am the Cheddar MAN")>
-
-
+    <html>
+        <body>
+        </body>
+    </html>
 </pre>
