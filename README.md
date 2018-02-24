@@ -16,6 +16,6 @@ brew install php70
 
 <html>
   <body>
-    <?php>
+    <php code goes here>
   </body>
 </html>
