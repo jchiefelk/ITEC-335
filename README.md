@@ -53,10 +53,10 @@ brew install php70
 </html>
   
 <p>
- To visit this, visit
+ To visit this locally,
 </p>
 
 <pre>
-http://localhost:8888/phptutorial/
+http://localhost:8888/ITEC-335/phptutorial/
 </pre>
 
