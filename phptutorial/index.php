@@ -1,5 +1,13 @@
 <html>
+
 <body>
-<?php print ("I am the Cheddar MAN!!!!!"); ?>
+
+<?php print ("First PHP Form\n"); ?>
+
+<input type="text" name="username" value="<?php echo $username;?>">
+<input type="text" name="password" value="<?php echo $password;?>">
+
+
 </body>
+
 </html>
