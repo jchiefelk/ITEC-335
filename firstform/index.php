@@ -1,3 +1,4 @@
+
 <html>
 <head>
 <style>
@@ -22,35 +23,36 @@ input {
     margin: 0.3rem;
 }
 
-p {
-  font-size: 1.4rem;
-}
-
 button {
   font-size: 1rem;
   width: 10rem;
+}
+
+
+@media (min-width: 640px){
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 640px){
+  p {
+    font-size: 0.9rem;
+  }
 }
 
 </style>
 
 </head>
 
-
 <body>  
   <p>Authentication Form</p>
-  <form method="GET">
-    <input type="text" name="user" placeholder="username"/>
+  <form method="POST">
     <input type="text" name="password" placeholder="password"/>
-    <button>SUBMIT</button>
+    <input type="submit" value="Let me in!"/>
   </form>
 </body>
 
-
-<?php
-$username = $_GET['user'];
-$password = $_GET['password'];
-print $username;
-print $password;
-?>
+<?php include('form.php'); ?>
 
 </html>
