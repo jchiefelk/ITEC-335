@@ -4,7 +4,7 @@ $password = $_POST['password'];
 
 
 if($password==''){ // enter your password here
-                $mysqli = new mysqli("127.0.0.1","root","jchie4445","employees"); // host,username,password,db name
+                $mysqli = new mysqli("127.0.0.1","root",$password,"employees"); // host,username,password,db name
 
                 // Oh no! A connect_errno exists so the connection attempt failed!
                 if ($mysqli->connect_errno) {
@@ -126,11 +126,19 @@ button {
 </head>
 
 <body>  
+
   <p>Authentication Form</p>
   <form method="POST" action="index.php">
     <input type="text" name="password" placeholder="password"/>
-    <input type="submit" value="Let me in!"/>
+    <input type="submit" value="Let me in!" onclick="myFunction()"/>
   </form>
+
+
+  <script>
+    function myFunction(){
+      alert("clicked");
+    };
+  </script>
 </body>
 
 
