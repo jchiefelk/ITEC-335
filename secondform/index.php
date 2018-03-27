@@ -1,9 +1,8 @@
 <?php
 $password = $_POST['password'];
+$ref="test";
 
-
-
-if($password==''){ // enter your password here
+if($password==$ref){ // enter your password here
                 $mysqli = new mysqli("127.0.0.1","root",$password,"employees"); // host,username,password,db name
 
                 // Oh no! A connect_errno exists so the connection attempt failed!
