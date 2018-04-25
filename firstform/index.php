@@ -29,6 +29,16 @@ button {
 }
 
 
+ul {
+
+}
+
+li {
+  
+}
+
+
+
 @media (min-width: 640px){
   p {
     font-size: 1.4rem;
