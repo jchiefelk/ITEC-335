@@ -2,16 +2,9 @@
 $password='jchie4445';
 
 
-
-
-
 if($password==$_POST['password']){
 
-	
-
                 $mysqli = new mysqli("127.0.0.1","root",$password,"employees"); // host,username,password,db name
-    
-
                 // Oh no! A connect_errno exists so the connection attempt failed!
                 if ($mysqli->connect_errno) {
                     // The connection failed. What do you want to do? 
@@ -28,6 +21,7 @@ if($password==$_POST['password']){
                     // You might want to show them something nice, but we will simply exit
                     exit;
                 }
+
                 $sql="SELECT firstname FROM admin";
                 if (!$result = $mysqli->query($sql)){
                     // Oh no! The query failed. 
@@ -40,6 +34,7 @@ if($password==$_POST['password']){
                     echo "Error: " . $mysqli->error . "\n";
                     exit;
                 }
+
                 if($result->num_rows===0){
                     // Oh, no rows! Sometimes that's expected and okay, sometimes
                     // it is not. You decide. In this case, maybe actor_id was too
@@ -56,7 +51,7 @@ if($password==$_POST['password']){
                 while($data = $result->fetch_assoc()){
                     $array[] = $data['firstname'];
                 }
-
+            
                 echo "<ul>";
 
                 for($x=0;$x<count($array);$x++){
@@ -64,9 +59,8 @@ if($password==$_POST['password']){
                   print_r($array[$x]);
                   echo "</li>";
                 }
-
-                echo "</ul>"
-	***/
+                echo "</ul>";
+	           
   
 	} else if($password!=$_POST['password']){
 	echo "Wrong Password!!!";
