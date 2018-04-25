@@ -46,13 +46,18 @@ button {
 </head>
 
 <body>  
+
+
   <p>Authentication Form</p>
-  <form method="POST">
+  <form method="POST" action="form.php">
     <input type="text" name="password" placeholder="password"/>
     <input type="submit" value="Let me in!"/>
   </form>
+
+
+
 </body>
 
-<?php include('form.php'); ?>
+
 
 </html>
