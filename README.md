@@ -8,5 +8,5 @@
 <p>Building your first PHP Application</p>
 <h3><a href="https://github.com/jchiefelk/ITEC-335/tree/master/authenticationform">Form Basics</a></h3>
 <p>Building a form with PHP</p>
-<h3><a href="">Authenticating with MySQL Database</a></h3>
+<h3><a href="https://github.com/jchiefelk/ITEC-335/tree/master/mysqlauthform">Authenticating with MySQL Database</a></h3>
 <p>Using middleware in PHP to connect to MySQL database</p>
