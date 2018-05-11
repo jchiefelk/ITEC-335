@@ -6,7 +6,6 @@
 Markup language for 
 </p>
 
-<pre>
 <html>
   <head>
   </head>
@@ -14,7 +13,7 @@ Markup language for
     <----Other HTML tags goes Here---->
   </body>
 </html>
-</pre>
+
 
 
 
